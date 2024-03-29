@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/CSS/App.css'
+import '../CSS/App.css'
 import Navbar from './Navbar'
 
 export default function App() {
