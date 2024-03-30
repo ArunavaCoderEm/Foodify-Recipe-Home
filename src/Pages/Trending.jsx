@@ -28,7 +28,10 @@ export default function Trending() {
     <div className='relative flex-[0_0_90%] md:flex-[0_0_50%] overflow-visible '>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
         <Splide options={{
-          drag   : true,
+          gap       : 10,
+          pagination: false,
+          cover: true,
+          drag: true,
           perPage: 3,
           arrows : false
         }}>
