@@ -30,12 +30,6 @@ export default function Navbar() {
               <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                   className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Feature</a>
               </li>
-              <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                  className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
-              </li>
-              <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                  className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About</a>
-              </li>
             </ul>
             <div className='flex lg:ml-auto max-lg:w-full'>
               <div

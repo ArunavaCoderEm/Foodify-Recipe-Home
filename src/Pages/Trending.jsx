@@ -25,24 +25,31 @@ export default function Trending() {
   }
 
   return (
-    <div>
+    <div className='relative flex-[0_0_90%] md:flex-[0_0_50%] overflow-visible '>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
-        {/* <Splide options={{
-          drag : true,
-          drag   : 'free',
-          snap   : true,
+        <Splide options={{
+          drag   : true,
           perPage: 3,
+          arrows : false
         }}>
-        {trend.map((recipe) => {
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+        {/* {trend.map((recipe) => {
           return(
             <div key={recipe.id}>
-                <SplideSlide>
-                  <Card title={recipe.title} image={recipe.image}/>
+              <SplideSlide>
+                  <Card/>
                 </SplideSlide>
               </div>
             );
-          })}
-    </Splide> */}
+          })} */}
+    </Splide>
     </div>
   )
 }
