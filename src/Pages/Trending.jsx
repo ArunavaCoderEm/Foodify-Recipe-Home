@@ -1,5 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
+import Card from '../Components/Cards';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 
 export default function Trending() {
 
@@ -10,7 +13,7 @@ export default function Trending() {
   },[]);
 
   const gettrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=6&apiKey=8049b7a083a541158b542d5af2b4a98e`,
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${process.env.MY_FOOD_API_KEY}`,
     );
     try {
       const res = await data.json();  
@@ -23,14 +26,23 @@ export default function Trending() {
 
   return (
     <div>
-      {trend.map((recipe) => {
-        return(
+      <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
+        {/* <Splide options={{
+          drag : true,
+          drag   : 'free',
+          snap   : true,
+          perPage: 3,
+        }}>
+        {trend.map((recipe) => {
+          return(
             <div key={recipe.id}>
-              <p>{recipe.title}</p>
-              <img src={recipe.image}/>
-            </div>
-          );
-        })}
+                <SplideSlide>
+                  <Card title={recipe.title} image={recipe.image}/>
+                </SplideSlide>
+              </div>
+            );
+          })}
+    </Splide> */}
     </div>
   )
 }
