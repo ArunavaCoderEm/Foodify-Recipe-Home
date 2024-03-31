@@ -6,6 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.slick-dots li.slick-active button:before {
+  color:pink !important;
+}
+
 body {
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     overflow-x: hidden;

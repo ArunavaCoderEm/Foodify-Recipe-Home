@@ -5,10 +5,10 @@ export default function Cards(props) {
   return (
     <>
     <figure className="snip1527 ml-3 mr-3 items-center rounded-lg">
-      <div className="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg" alt="pr-sample23" /></div>
+      <div className="image"><img src={props.image} alt="pr-sample23" /></div>
       <figcaption>
-          <div className="date"><span className="day">28</span><span className="month">Oct</span></div>
-          <h3>The World Ended Yesterday</h3>
+          <div className="date"><span className="day">{props.tag}</span><span className="month">{props.undtag}</span></div>
+          <h3>{props.title}</h3>
           <p>
 
           You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.

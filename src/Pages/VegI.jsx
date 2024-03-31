@@ -3,23 +3,30 @@ import { useEffect, useState } from 'react';
 import Card from '../Components/Cards';
 import Slider from "react-slick";
 
-export default function Trending() {
+export default function VegI() {
 
-  const [trend,setTrend] = useState([])
+  const [veg,setveg] = useState([])
 
   useEffect(() => {
-    gettrending();
+    getveging();
   },[]);
 
-  const gettrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=8049b7a083a541158b542d5af2b4a98e`,
+  const getveging = async () => {
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=774ca53313b64a31ae899e4d76a881fc&tags=vegetarian`,
     );
-    try {
-      const res = await data.json();  
-      console.log(res);               
-      setTrend(res.recipes);
-    } catch (error) {
-       console.log(error.response) 
+    const checkw = localStorage.getItem('veg');
+    if(checkw){
+      setveg(JSON.parse(checkw))
+    }
+    else{
+      try {
+        const res = await data.json();  
+        console.log(res);
+        localStorage.setItem('veg',JSON.stringify(res.recipes));               
+        setveg(res.recipes);
+      } catch (error) {
+        console.log(error.response) 
+      }
     }
   }
   var settings = {
@@ -61,28 +68,17 @@ export default function Trending() {
     ]
   };
   return (
-    <div className='ml-7 mr-5'>
+    <div className='m-auto'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Veggies For You</h2>
+      
       <Slider {...settings}>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-         {/* {trend.map((recipe) => {
+         {veg.map((recipe) => {
            return(
-             <div key={recipe.id}>
-               <SplideSlide>
-                   <Card/>
-                 </SplideSlide>
-               </div>
+             <div key={recipe.id} className='m-auto'>
+                   <Card title={recipe.title} image={recipe.image} tag={'V'} undtag={'eg'}/>
+              </div>
              );
-          })} */}
+            })} 
         </Slider>
       </div>
   )

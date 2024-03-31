@@ -1,27 +1,32 @@
-import React from 'react'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../Components/Cards';
 import Slider from "react-slick";
+import '../CSS/index.css'
 
 export default function Trending() {
-
-  const [trend,setTrend] = useState([])
+  const [trend, setTrend] = useState([]);
 
   useEffect(() => {
-    gettrending();
-  },[]);
+    getTrending();
+  }, []);
 
-  const gettrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=8049b7a083a541158b542d5af2b4a98e`,
-    );
-    try {
-      const res = await data.json();  
-      console.log(res);               
-      setTrend(res.recipes);
-    } catch (error) {
-       console.log(error.response) 
+  const getTrending = async () => {
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=774ca53313b64a31ae899e4d76a881fc`);
+    const check = localStorage.getItem('popular');
+    if (check) {
+      setTrend(JSON.parse(check));
+    } else {
+      try {
+        const res = await data.json();
+        console.log(res);
+        localStorage.setItem('popular', JSON.stringify(res.recipes));
+        setTrend(res.recipes);
+      } catch (error) {
+        console.log(error.response);
+      }
     }
-  }
+  };
+
   var settings = {
     dots: true,
     infinite: true,
@@ -54,35 +59,22 @@ export default function Trending() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       }
     ]
   };
+
   return (
-    <div className='ml-7 mr-5'>
+    <div className='ml-9 mr-5'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
       <Slider {...settings}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-         {/* {trend.map((recipe) => {
-           return(
-             <div key={recipe.id}>
-               <SplideSlide>
-                   <Card/>
-                 </SplideSlide>
-               </div>
-             );
-          })} */}
-        </Slider>
-      </div>
-  )
+        {trend.map((recipe) => (
+          <div key={recipe.id}>
+            <Card title={recipe.title} image={recipe.image} tag={'Tr'} undtag={'ending'} />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 }
