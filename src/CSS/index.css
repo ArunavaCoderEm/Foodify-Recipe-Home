@@ -8,6 +8,7 @@ html{
 
 body {
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    overflow-x: hidden;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);

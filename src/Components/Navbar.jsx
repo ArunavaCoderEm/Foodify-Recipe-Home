@@ -25,7 +25,7 @@ export default function Navbar() {
                   className='lg:hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]'>Home</a>
               </li>
               <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                  className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Team</a>
+                  className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About</a>
               </li>
               <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                   className='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Feature</a>
@@ -34,8 +34,8 @@ export default function Navbar() {
             <div className='flex lg:ml-auto max-lg:w-full'>
               <div
                 className='flex xl:w-80 max-xl:w-full bg-gray-100 px-6 py-3 rounded outline outline-transparent focus-within:outline-[#007bff]'>
-                <input type='text' placeholder='Search something...'
-                  className='w-full text-sm bg-transparent rounded outline-none pr-2' />
+                <input type='text' placeholder='Search some Recipe...'
+                  className='w-full text-sm bg-transparent rounded text-black outline-none pr-2' />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
                   className="cursor-pointer fill-gray-400">
                   <path

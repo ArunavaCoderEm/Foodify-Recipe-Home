@@ -28,10 +28,11 @@ export default function Trending() {
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 500,
     arrows: false,
+    speed: 500,
+    autoplaySpeed: 3000,
     cssEase: "linear",
+    rtl: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -61,7 +62,7 @@ export default function Trending() {
   };
   return (
     <div className='m-auto'>
-      <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
+      <h2 className='text-4xl text-center text-white font-bold m-10'>Veggies For You</h2>
       <Slider {...settings}>
           <Card/>
           <Card/>
