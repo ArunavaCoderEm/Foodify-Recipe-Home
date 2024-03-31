@@ -68,7 +68,7 @@ export default function VegI() {
     ]
   };
   return (
-    <div className='m-auto'>
+    <div className='ml-9'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Veggies For You</h2>
       
       <Slider {...settings}>
