@@ -61,7 +61,7 @@ export default function Trending() {
     ]
   };
   return (
-    <div className='m-auto'>
+    <div className='ml-7 mr-5'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Veggies For You</h2>
       <Slider {...settings}>
           <Card/>

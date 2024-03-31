@@ -54,25 +54,25 @@ export default function Trending() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
   };
   return (
-    <div className='m-auto'>
+    <div className='ml-7 mr-5'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
       <Slider {...settings}>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
          {/* {trend.map((recipe) => {
            return(
              <div key={recipe.id}>
