@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Card from '../Components/Cards';
+import Card from './Cards';
 import Slider from "react-slick";
 
 export default function VegI() {
