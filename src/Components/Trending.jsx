@@ -11,19 +11,17 @@ export default function Trending() {
   }, []);
 
   const getTrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=5c75fe5e0eed4ed3b9e6263f6e7eb9e0`);
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=6bc37ab2227240df9f772a9f81ac0859`);
     const check = localStorage.getItem('popular');
-    if (check) {
+    if (!check) {
       setTrend(JSON.parse(check));
-    } else {
-      try {
-        const res = await data.json();
-        console.log(res);
-        localStorage.setItem('popular', JSON.stringify(res.recipes));
-        setTrend(res.recipes);
-      } catch (error) {
-        console.log(error.response);
-      }
+    } else {     
+      console.log(check);
+      const res = await data.json();
+      console.log(res);
+      localStorage.setItem('popular', JSON.stringify(res.recipes));
+      setTrend(res.recipes);
+
     }
   };
 
