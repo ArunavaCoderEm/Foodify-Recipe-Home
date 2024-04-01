@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -124,4 +125,8 @@ body {
 .snip1527.hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.stylerq {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
