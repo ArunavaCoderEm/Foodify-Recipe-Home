@@ -11,7 +11,7 @@ export default function Trending() {
   }, []);
 
   const getTrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=6bc37ab2227240df9f772a9f81ac0859`);
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=76ebd32ecef6493f811063df0bc5aaf8`);
     const check = localStorage.getItem('popular');
     if (!check) {
       setTrend(JSON.parse(check));
