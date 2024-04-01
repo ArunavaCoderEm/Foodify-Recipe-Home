@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,7 +17,6 @@ body {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
 .snip1527 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #ffffff;

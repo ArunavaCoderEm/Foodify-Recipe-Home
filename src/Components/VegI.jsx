@@ -12,18 +12,18 @@ export default function VegI() {
   },[]);
 
   const getveging = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=774ca53313b64a31ae899e4d76a881fc&tags=vegetarian`,
+    const dataa = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=5c75fe5e0eed4ed3b9e6263f6e7eb9e0&tags=vegetarian`,
     );
-    const checkw = localStorage.getItem('veg');
-    if(checkw){
-      setveg(JSON.parse(checkw))
+    const checka = localStorage.getItem('veg');
+    if(checka){
+      setveg(JSON.parse(checka))
     }
     else{
       try {
-        const res = await data.json();  
-        console.log(res);
-        localStorage.setItem('veg',JSON.stringify(res.recipes));               
-        setveg(res.recipes);
+        const resa = await dataa.json();  
+        console.log(resa);
+        localStorage.setItem('veg',JSON.stringify(resa.recipes));               
+        setveg(resa.recipes);
       } catch (error) {
         console.log(error.response) 
       }
