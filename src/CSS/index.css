@@ -239,11 +239,19 @@ body {
     .tit {
       font-size: 15px;
     }
+    
+    
+    .bll {
+      margin-left: -1rem;
+    }
 
     .fog {
       display: none;
     }
   
+    .mobout {
+      height: 65vh;
+    }
 
 }
 
