@@ -3,8 +3,12 @@
     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
   }
   
-  .hero {
+  .hero h2 {
     font-family: 'Rocher';
+  }
+
+  .hm {
+    margin-top: 6rem;
   }
   
   @font-palette-values --Grays {
@@ -32,4 +36,52 @@
   
   .mint {
     font-palette: --Mint;
+  }
+
+  .cir {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: 0.3s;
+  }
+
+  .cir img {
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+    width: 70px;
+    cursor: pointer;
+    height: 70px;
+    transition: 0.3s;
+    box-shadow: 0 0 17px 0 palevioletred;
+  }
+
+  .cir:hover img{
+    box-shadow: 0 0 17px 0 aqua;
+    border: 3px solid aqua;
+  }
+
+  .cir1 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: 0.3s;
+  }
+
+  .cir1 img {
+    border: 3px solid aqua;
+    border-radius: 50%;
+    width: 70px;
+    cursor: pointer;
+    height: 70px;
+    transition: 0.3s;
+    box-shadow: 0 0 17px 0 aqua;
+  }
+
+  .cir1:hover img{
+    box-shadow: 0 0 17px 0 palevioletred;
+    border: 3px solid palevioletred;
+  }
+
+  .item {
+    cursor: pointer;
   }

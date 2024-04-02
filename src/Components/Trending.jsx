@@ -65,7 +65,7 @@ export default function Trending() {
   };
 
   return (
-    <div className='ml-9 hero'>
+    <div className='ml-9 hero hm'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
       <Slider {...settings}>
         {trend.map((recipe) => (
