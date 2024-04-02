@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .slick-dots li.slick-active button:before {
@@ -183,7 +184,7 @@ body {
     } 
 
     .bll {
-      width: 90%;
+      width: 100%;
     }
 
     .fog {
@@ -230,6 +231,20 @@ body {
       margin-left: -20px;
       margin-top: -20px;
     }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    .tit {
+      font-size: 15px;
+    }
+
+    .fog {
+      display: none;
+    }
+  
+
 }
 
 .images img {
