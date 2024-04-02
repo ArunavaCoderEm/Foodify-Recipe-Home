@@ -28,12 +28,12 @@ export default function Landing() {
   }
   return (
     <>
-    <div className='mobout h-auto rounded-md bg-slate-300 opacity-100 imgbut relative m-5 bg-[url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/37e19c53319193.592ffe63763e0.gif")]'>
+    <div className='mobout h-auto rounded-md bg-slate-300 imgbut relative m-5 bg-[url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/37e19c53319193.592ffe63763e0.gif")]'>
       {today.map((recipe) => {
             return(
               <div key={recipe.id} className='grid grid-cols-7 overflow-hidden py-5 mobhid'>
                 <div className="images col-span-2 relative nnn">
-                  <img src={recipe.image} className='rounded-md opacity-90 w-96 h-80 mt-4 relative ml-5'/>
+                  <img src={recipe.image} className='rounded-md opacity-97 w-96 h-80 mt-4 relative ml-5'/>
                 </div>
                 <div className="col-span-3 items-center ml-10 text-center">
                   <h4 className='text-white px-3 m-auto mb-10 rounded-full bg-sky-500 py-4 ml-5 text-xl font-semibold text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 tod'>Today's Pick For You</h4>
