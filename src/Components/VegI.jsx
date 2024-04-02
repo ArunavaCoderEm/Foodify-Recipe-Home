@@ -12,10 +12,10 @@ export default function VegI() {
   },[]);
 
   const getveging = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=1cdc7ead75fa480491e91ecd8d0ce40d&tags=vegetarian`,
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=5b4c8f00d5dd4aff8650264d4dd67e95&tags=vegetarian`,
     );
     const check = localStorage.getItem('veg');
-    if(!check){
+    if(check){
       console.log(check);
       setveg(JSON.parse(check))
     }
