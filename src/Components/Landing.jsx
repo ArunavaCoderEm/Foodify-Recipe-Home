@@ -37,9 +37,11 @@ export default function Landing() {
                 </div>
                 <div className="col-span-3 items-center ml-10 text-center">
                   <h4 className='text-white px-3 m-auto mb-10 rounded-full bg-sky-500 py-4 ml-5 text-xl font-semibold text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 tod'>Today's Pick For You</h4>
-                  <mark className='tit px-3 text-center bg-clip-text text-transparent font-bold text-4xl mb-8 stylerq bg-gradient-to-r from-teal-500 via-purple-500'>" {(recipe.title).toUpperCase()} "</mark>
+                  <div className="bll">
+                    <mark className='tit px-3 text-center bg-clip-text text-transparent font-bold text-4xl mb-8 stylerq bg-gradient-to-r from-teal-500 via-purple-500'>" {(recipe.title).toUpperCase()} "</mark>
+                  </div>
                   <h3 className='fog bg-slate-200 font-semibold py-2 rounded-lg opacity-95 nextim mb-7 w-full text-center px-3 text-pink-600'>"Recipes are the stories that food tells, capturing flavors, traditions, and memories within every ingredient."</h3>
-                  <button className='tr focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-center'>Get Recipe</button>
+                  <button className='tr focus:outline-none bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-center font-semibold text-sky-200 font-mono'>Get Recipe</button>
                 </div>
                 <div className="nnextim col-span-2">
                   <img src='./chef.png' className='transform -scale-x-100 rounded-md opacity-90 w-96 h-80 relative m-5'/>

@@ -11,7 +11,7 @@ const Navbar = () => {
     <header className='border-b py-4 px-4 sm:px-10 bg-slate-300 font-sans min-h-70px'>
       <div className='flex flex-wrap items-center gap-x-2 max-lg-gap-y-6'>
         <a href="">
-          <h3 className='text-3xl font-bold'><span className='text-purple-600'>F</span>oodi<span className='text-purple-600'>F</span>y</h3>
+          <h3 className='text-3xl font-bold'><span className='text-purple-600 font-sans md:font-serif'>f</span>oodi<span className='text-purple-600 font-sans md:font-serif'>f</span>y</h3>
         </a>
         <button id="toggle" className='lg:hidden ml-auto' onClick={handleClick}>
           <svg className="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
