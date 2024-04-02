@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Cards';
 import Slider from "react-slick";
-import '../CSS/index.css'
+import '../CSS/index.css';
+import '../CSS/BodyTV.css';
 
 export default function Trending() {
   const [trend, setTrend] = useState([]);
@@ -64,7 +65,7 @@ export default function Trending() {
   };
 
   return (
-    <div className='ml-9 mr-5'>
+    <div className='ml-9 hero'>
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
       <Slider {...settings}>
         {trend.map((recipe) => (
