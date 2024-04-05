@@ -10,7 +10,7 @@ export default function Landing() {
   }, []);
 
   const getToday = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=5b6d2a37049c4d4daad26389b8ed64a8`,
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=5354fe010bb74b809b04e5b395b41cf8`,
     );
     const check = localStorage.getItem('today');
     if(check){
