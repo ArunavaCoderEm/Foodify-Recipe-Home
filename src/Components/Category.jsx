@@ -6,7 +6,7 @@ export default function Category() {
     <>
       <div className='w-100 h-62 m-auto hero mt-5'>
         <h2 className='text-4xl text-center'>Cuisine Category</h2>
-        <div className="catitem mt-7 grid grid-cols-5">
+        <div className="mt-7 grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             <div className="item p-3 m-auto">
               <div className="cir">
                 <img src="https://www.blueosa.com/wp-content/uploads/2020/01/the-best-top-10-indian-dishes.jpg" alt="Indian"/>
