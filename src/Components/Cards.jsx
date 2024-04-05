@@ -4,7 +4,7 @@ import '../CSS/index.css'
 export default function Cards(props) {
   return (
     <>
-    <figure className="snip1527 ml-3 mr-3 items-center rounded-lg">
+    <figure className="snip1527 m-auto items-center rounded-lg">
       <div className="image"><img src={props.image} alt="pr-sample23" /></div>
       <figcaption>
           <div className="date"><span className="day">{props.tag}</span><span className="month">{props.undtag}</span></div>

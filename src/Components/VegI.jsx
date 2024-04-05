@@ -30,7 +30,7 @@ export default function VegI() {
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,
     arrows: false,
@@ -72,7 +72,7 @@ export default function VegI() {
       <Slider {...settings}>
          {veg.map((recipe) => {
            return(
-             <div key={recipe.id} className='m-auto'>
+             <div key={recipe.id} className='ml-10'>
                    <Card title={recipe.title} image={recipe.image} tag={'V'} undtag={'eg'}/>
               </div>
              );
