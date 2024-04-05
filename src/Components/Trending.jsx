@@ -12,7 +12,7 @@ export default function Trending() {
   }, []);
 
   const getTrending = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=5354fe010bb74b809b04e5b395b41cf8`);
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${import.meta.env.REACT_APP_SPOONACULAR_API_KEY}`);
     const check = localStorage.getItem('popular');
     if (check) {
       setTrend(JSON.parse(check));
