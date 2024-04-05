@@ -62,7 +62,7 @@ This will create an optimized production build in the dist folder, ready for dep
 ### Spoonacular API Key
 
 To use the Spoonacular API, you'll need a free API key. Obtain one from Spoonacular Pricing.
-Create a .env file in the project's root directory (exclude this file from version control) and add the following line, replacing YOUR_API_KEY with your actual key :
+Create a (.env.local) file in the project's root directory (exclude this file from version control) and add the following line, replacing YOUR_API_KEY with your actual key :
 
 ```bash
 REACT_APP_SPOONACULAR_API_KEY=YOUR_API_KEY
