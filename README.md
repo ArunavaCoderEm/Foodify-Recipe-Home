@@ -61,8 +61,8 @@ This will create an optimized production build in the dist folder, ready for dep
 ## Using FoodiFy
 ### Spoonacular API Key
 
-    To use the Spoonacular API, you'll need a free API key. Obtain one from Spoonacular Pricing.
-    Create a .env file in the project's root directory (exclude this file from version control) and add the following line, replacing YOUR_API_KEY with your actual key :
+To use the Spoonacular API, you'll need a free API key. Obtain one from Spoonacular Pricing.
+Create a .env file in the project's root directory (exclude this file from version control) and add the following line, replacing YOUR_API_KEY with your actual key :
 
 ```bash
 REACT_APP_SPOONACULAR_API_KEY=YOUR_API_KEY
@@ -70,13 +70,13 @@ REACT_APP_SPOONACULAR_API_KEY=YOUR_API_KEY
 
 ## Search for Recipes
 
-    1. Enter your desired ingredients or keywords in the search bar.
-    2. Click the "Search" button or press Enter to initiate the search using the Spoonacular API.
-    3. FoodiFy will display a list of matching recipes along with relevant information.
+1. Enter your desired ingredients or keywords in the search bar.
+2. Click the "Search" button or press Enter to initiate the search using the Spoonacular API.
+3. FoodiFy will display a list of matching recipes along with relevant information.
 
 ## View Recipe Details
 
-    1. Click on a recipe card to view its detailed information, including ingredients, instructions, and optional nutritional data (if available from the API).
+1. Click on a recipe card to view its detailed information, including ingredients, instructions, and optional nutritional data (if available from the API).
 
 ## Contributing
 
