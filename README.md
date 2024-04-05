@@ -78,6 +78,8 @@ REACT_APP_SPOONACULAR_API_KEY=YOUR_API_KEY
 
 1. Click on a recipe card to view its detailed information, including ingredients, instructions, and optional nutritional data (if available from the API).
 
+## Images
+
 ## Contributing
 
 We welcome contributions to FoodiFy! Please refer to the CONTRIBUTING.md file for guidelines on creating pull requests, code style, and testing practices.
