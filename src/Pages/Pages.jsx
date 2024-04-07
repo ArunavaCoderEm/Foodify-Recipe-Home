@@ -8,6 +8,7 @@ import {Routes,Route} from 'react-router-dom'
 import Feature from './Feature'
 import About from './About'
 import Search from '../Components/Search'
+import Output from './Output'
 
 export default function Pages() {
   return (
@@ -18,6 +19,7 @@ export default function Pages() {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/feature' element={<Feature/>} />
+        <Route path='/output/:searched' element={<Output/>} />
         <Route path='/cuisine/:type' element={<Cuisine/>} />
         <Route path='/type/:gettype' element={<Type/>} />
     </Routes>
