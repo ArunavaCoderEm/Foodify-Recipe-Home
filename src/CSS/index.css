@@ -260,7 +260,7 @@ body {
     }
 
     .herou {
-      margin-left: -1rem;
+      margin-left: -0.2rem;
     }
 
 }
@@ -270,7 +270,7 @@ body {
     height: 90vh;
   }
   .herou {
-    margin-left: 0.1rem;
+    margin-left: 0.3rem;
   }
 }
 
