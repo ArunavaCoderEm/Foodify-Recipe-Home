@@ -72,7 +72,7 @@ export default function VegI() {
       <Slider {...settings}>
          {veg.map((recipe) => {
            return(
-             <div key={recipe.id} className='ml-10'>
+             <div key={recipe.id} className='ml-10 herou'>
                    <Card title={recipe.title} image={recipe.image} tag={'V'} undtag={'eg'}/>
               </div>
              );

@@ -259,11 +259,27 @@ body {
       grid-column: 1 / span 3;
     }
 
+    .herou {
+      margin-left: -1rem;
+    }
+
 }
 
 @media only screen and (max-width: 379px) {
   .mobout {
     height: 90vh;
+  }
+  .herou {
+    margin-left: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 379px) {
+  .mobout {
+    height: 90vh;
+  }
+  .herou {
+    margin-left: -1rem;
   }
 }
 
