@@ -11,8 +11,7 @@ export default function Cards(props) {
           <div className="date"><span className="day">{props.tag}</span><span className="month">{props.undtag}</span></div>
           <h3>{props.title}</h3>
           <p>
-
-          You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.
+          "Savor the essence of culinary delight with our curated collection of mouthwatering recipes. From comforting classics to exotic flavors, indulge your palate and embark on a gastronomic journey like no other."
           </p>
       </figcaption>
       <Link to={props.ing}><button className='focus:outline-none bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 font-semibold text-sky-200 font-mono'>Get Recipe</button></Link>

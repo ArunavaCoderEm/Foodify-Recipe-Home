@@ -11,6 +11,20 @@
 
 ---
 
+## Limitations
+
+There is a limitation about the spoonacular API that it only allows 150 calls per day so .... you can go to --
+
+```bash
+    https://tempmailo.com/
+ ```
+and create an API key in --
+
+```bash
+https://spoonacular.com/food-api
+```
+as many as you want and change that api key in (.env file after creating that file).
+
 ## Project Setup
 
 ### Prerequisites

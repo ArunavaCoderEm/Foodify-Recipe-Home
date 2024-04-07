@@ -30,7 +30,7 @@ export default function Ingred() {
             </div>
             <div className="restdet m-auto w-full items-center">
                 <div className="butt w-72 m-auto items-center">
-                    <button className={' text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 mr-5 ml-6 ' + (act == 'instruction' ? 'active' : '')} onClick={() => setact('instruction')}>Instruction</button>
+                    <button className={' text-white bg-purple-900 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-900 dark:hover:bg-purple-700 dark:focus:ring-purple-900 mr-5 ml-6 ' + (act == 'instruction' ? 'active' : '')} onClick={() => setact('instruction')}>Instruction</button>
 
 
                     <button className= {'text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ml-5 ' + (act == 'ingredient' ? 'active' : '')} onClick={() => setact('ingredient')}>Ingredient</button>
