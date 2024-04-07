@@ -10,7 +10,10 @@ html{
 }
 
 .slick-dots li.slick-active button:before {
-  color:pink !important;
+  color:rgb(63, 2, 48) !important;
+}
+.slick-dots li button:before {
+  background: rgb(214, 104, 224) !important;  
 }
 
 body {
