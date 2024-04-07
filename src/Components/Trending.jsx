@@ -69,7 +69,7 @@ export default function Trending() {
       <h2 className='text-4xl text-center text-white font-bold m-10'>Most Trending</h2>
       <Slider {...settings}>
         {trend.map((recipe) => (
-          <div key={recipe.id}  className='ml-10 herou '>
+          <div key={recipe.id}  className='ml-10 herou'>
             <Card title={recipe.title} image={recipe.image} tag={'Tr'} undtag={'ending'} />
           </div>
         ))}
