@@ -8,9 +8,9 @@ export default function Landing() {
   useEffect(() => {
     getToday();
   }, []);
-
+  console.log(import.meta.env.REACT_APP_SPOONACULAR_API_KEY)
   const getToday = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=${import.meta.env.REACT_APP_SPOONACULAR_API_KEY}`,
+    const data = await fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=${import.meta.env.VITE_APP_SPOONACULAR_API_KEY}`,
     );
     const check = localStorage.getItem('today');
     if(check){
