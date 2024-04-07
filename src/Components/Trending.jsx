@@ -13,17 +13,17 @@ export default function Trending() {
 
   const getTrending = async () => {
     const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${import.meta.env.VITE_APP_SPOONACULAR_API_KEY}`);
-    const check = localStorage.getItem('popular');
-    if (check) {
-      setTrend(JSON.parse(check));
-    } else {     
+    // const check = localStorage.getItem('popular');
+    // if (check) {
+      // setTrend(JSON.parse(check));
+    // } else {     
       console.log(check);
       const res = await data.json();
       console.log(res);
-      localStorage.setItem('popular', JSON.stringify(res.recipes));
+      // localStorage.setItem('popular', JSON.stringify(res.recipes));
       setTrend(res.recipes);
 
-    }
+    // }
   };
 
   var settings = {

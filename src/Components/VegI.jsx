@@ -14,18 +14,18 @@ export default function VegI() {
   const getveging = async () => {
     const data = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${import.meta.env.VITE_APP_SPOONACULAR_API_KEY}&tags=vegetarian`,
     );
-    const check = localStorage.getItem('veg');
-    if(check){
-      console.log(check);
-      setveg(JSON.parse(check))
-    }
-    else{
+    // const check = localStorage.getItem('veg');
+    // if(check){
+      // console.log(check);
+      // setveg(JSON.parse(check))
+    // }
+    // else{
       console.log(check);
       const res = await data.json();  
       console.log(res);
-      localStorage.setItem('veg',JSON.stringify(res.recipes));               
+      // localStorage.setItem('veg',JSON.stringify(res.recipes));               
       setveg(res.recipes);
-    }
+    // }
   }
   var settings = {
     dots: true,

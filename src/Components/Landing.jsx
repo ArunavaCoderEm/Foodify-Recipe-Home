@@ -12,19 +12,19 @@ export default function Landing() {
   const getToday = async () => {
     const data = await fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=${import.meta.env.VITE_APP_SPOONACULAR_API_KEY}`,
     );
-    const check = localStorage.getItem('today');
-    if(check){
-      console.log(check);
-      setToday(JSON.parse(check))
-    }
-    else{
+    // const check = localStorage.getItem('today');
+    // if(check){
+    //   console.log(check);
+    //   setToday(JSON.parse(check))
+    // }
+    // else{
       console.log(check);
       const res = await data.json();  
       console.log(res);
       localStorage.setItem('today',JSON.stringify(res.recipes));               
       setToday(res.recipes);
       console.log(today);
-    }
+    // }
   }
   return (
     <>
