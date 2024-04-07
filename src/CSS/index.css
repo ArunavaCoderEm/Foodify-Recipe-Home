@@ -308,3 +308,22 @@ body {
 .fog {
   font-size: 17px;
 }
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(23, 0, 52, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #831dff;
+  border-radius: 10rem;
+}
+@media (max-width: 420px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
