@@ -92,3 +92,17 @@
     }
   }
   
+
+  @media (max-width: 639px) {
+    .gridd {
+      grid-template-columns: repeat(1, minmax(0, 1fr)); 
+      margin-left: -1rem;
+    }
+  }
+
+
+  .tyty {
+    box-shadow: 0 0 10px 0 violet;
+    border: 0 0;
+  }
+  

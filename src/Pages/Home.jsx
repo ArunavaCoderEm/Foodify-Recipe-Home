@@ -8,10 +8,10 @@ import Category from '../Components/Category';
 export default function Home() {
   return (
     <>
-        <Landing/>
-        <Category/>
-        <Trending/>
-        <VegI/>
+      <Landing/>
+      <Category/>
+      <Trending/>
+      <VegI/>
     </>
   )
 }

@@ -1,31 +1,23 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      animation: {
-        text: 'text 5s ease infinite',
-      },
       keyframes: {
-        text: {
-          '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center',
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
           },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center',
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
           },
         },
       },
-    }
-  }
-}
-
+      animation: {
+        slidein: "slidein 1s ease 300ms",
+      },
+    },
+  },
+  plugins: [],
+};
