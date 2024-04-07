@@ -20,7 +20,7 @@ export default function Search() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 19l-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
           </svg>
         </div>
-        <input type="text" onChange={(e) => setInp(e.target.value)} value={inp} id="default-search" className="bg-transparent block w-full p-4 pl-10 text-sm text-gray-900 border border-transparent rounded-lg focus:outline-none dark:bg-gray-400 dark:border-0 dark:placeholder-violet-800 dark:text-violet-700 dark:focus:ring-0 dark:focus:border-0" placeholder="Search Recipes Here ..." required />
+        <input type="text" onChange={(e) => setInp(e.target.value)} value={inp} id="default-search" className="tyty bg-transparent block w-full p-4 pl-10 text-sm text-gray-900 border border-transparent rounded-lg focus:outline-none dark:bg-gray-400 dark:border-0 dark:placeholder-violet-800 dark:text-violet-700 dark:focus:ring-0 dark:focus:border-0" placeholder="Search Recipes Here ..." required />
         <button type="submit" className="absolute bottom-2.5 right-2.5 bg-violet-600 hover:bg-violet-700 focus:ring-0 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-white dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-0">Search</button> 
       </div>
     </form>
