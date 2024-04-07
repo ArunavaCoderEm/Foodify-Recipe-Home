@@ -1,4 +1,4 @@
-# FoodiFy: Food Recipe Generator with Vite, React, Tailwind CSS, and Spoonacular API
+# FoodiFy: Food Recipe Generator with Vite + React, Tailwind CSS, and Spoonacular API
 
 ## Table of Contents
 
