@@ -34,7 +34,7 @@ const Navbar = () => {
               <NavLink exact to='/' activeClassName="text-slate-300" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-violet-700 md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent font-bold">Home</NavLink>
             </li>
             <li>
-              <NavLink to='/about' activeClassName="text-slate-300" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-violet-700 md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent font-bold">About</NavLink>
+              <NavLink to='/about' activeClassName="text-slate-300" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-violet-700 md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent font-bold">About Me</NavLink>
             </li>
             <li>
               <NavLink to='/feature' activeClassName="text-slate-300" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-500 md:p-0 dark:text-violet-700 md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent font-bold">Features</NavLink>
