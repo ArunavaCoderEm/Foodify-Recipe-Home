@@ -29,7 +29,7 @@ export default function Cuisine() {
                 {cuisine.map((recipe) => {
                     return(
                         <div key={recipe.id} className='ml-10'>
-                            <Card title={recipe.title} image={recipe.image} tag={params.type.slice(0,2)} undtag={params.type.slice(2,4)}/>
+                            <Card title={recipe.title} image={recipe.image} tag={params.type.slice(0,2)} undtag={params.type.slice(2,4)} ing={'/ingred/'+ recipe.id}/>
                         </div>
                         );
                     })}
