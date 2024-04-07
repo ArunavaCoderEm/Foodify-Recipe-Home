@@ -20,7 +20,7 @@ export default function VegI() {
       // setveg(JSON.parse(check))
     // }
     // else{
-      console.log(check);
+      // console.log(check);
       const res = await data.json();  
       console.log(res);
       // localStorage.setItem('veg',JSON.stringify(res.recipes));               

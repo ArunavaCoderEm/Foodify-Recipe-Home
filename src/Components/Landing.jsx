@@ -18,7 +18,7 @@ export default function Landing() {
     //   setToday(JSON.parse(check))
     // }
     // else{
-      console.log(check);
+      // console.log(check);
       const res = await data.json();  
       console.log(res);
       localStorage.setItem('today',JSON.stringify(res.recipes));               
