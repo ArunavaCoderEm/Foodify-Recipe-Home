@@ -93,6 +93,14 @@ VITE_APP_SPOONACULAR_API_KEY=YOUR_API_KEY
 1. Click on a recipe card to view its detailed information, including ingredients, instructions, and optional nutritional data (if available from the API).
 
 ## Images
+![Screenshot 2024-04-08 002444](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/eea16569-4238-46bf-9550-d7f73915533b)
+![Screenshot 2024-04-08 002414](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/1d3e8ecb-7d27-406e-baa7-0d652edaa0ce)
+![Screenshot 2024-04-08 002351](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/0c2a6a97-b402-4203-9d6c-07e1a2e30f51)
+![Screenshot 2024-04-08 002330](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/7178224e-17e0-469e-ba61-51e3e2d1776b)
+![Screenshot 2024-04-08 002312](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/d406e71a-a2ef-4436-9c06-49333d9a1f91)
+![Screenshot 2024-04-08 002250](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/4f55e20b-6a8a-4504-a53f-b5ca0165a8e0)
+![Screenshot 2024-04-08 002237](https://github.com/ArunavaCoderEm/Foodify-Recipe-Home/assets/121813676/e03ee9a4-d260-4dcd-9798-d240d36850ca)
+
 
 ## Contributing
 
