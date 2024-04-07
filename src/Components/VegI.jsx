@@ -17,7 +17,7 @@ export default function VegI() {
     // const check = localStorage.getItem('veg');
     // if(check){
       // console.log(check);
-      // setveg(JSON.parse(check))
+      // setveg(JSON.parse(check)) 
     // }
     // else{
       // console.log(check);
