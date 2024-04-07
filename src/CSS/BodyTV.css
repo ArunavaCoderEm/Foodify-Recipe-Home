@@ -105,4 +105,11 @@
     box-shadow: 0 0 10px 0 violet;
     border: 0 0;
   }
-  
+
+  .active {
+    color: #000000;
+  }
+
+  .img {
+    box-shadow: 0 0 20px 0 violet;
+  }

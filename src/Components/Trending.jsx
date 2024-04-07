@@ -70,7 +70,7 @@ export default function Trending() {
       <Slider {...settings}>
         {trend.map((recipe) => (
           <div key={recipe.id}  className='ml-10 herou'>
-            <Card title={recipe.title} image={recipe.image} tag={'Tr'} undtag={'ending'} />
+            <Card title={recipe.title} image={recipe.image} tag={'Tr'} undtag={'ending'} ing={'/ingred/'+ recipe.id} />
           </div>
         ))}
       </Slider>

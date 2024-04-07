@@ -9,6 +9,7 @@ import Feature from './Feature'
 import About from './About'
 import Search from '../Components/Search'
 import Output from './Output'
+import Ingred from './Ingred'
 
 export default function Pages() {
   return (
@@ -22,6 +23,7 @@ export default function Pages() {
         <Route path='/output/:searched' element={<Output/>} />
         <Route path='/cuisine/:type' element={<Cuisine/>} />
         <Route path='/type/:gettype' element={<Type/>} />
+        <Route path='/ingred/:name' element={<Ingred/>} />
     </Routes>
     <Footer />
     </>
