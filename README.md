@@ -13,7 +13,7 @@
 
 ## Limitations
 
-There is a limitation about the spoonacular API that it only allows 150 calls per day so .... you can go to --
+There is a limitation about the spoonacular API (I am giving you only one API key for use but it will expire after 150 calls overall) that it only allows 150 calls per day so .... you can go to --
 
 ```bash
     https://tempmailo.com/
