@@ -34,7 +34,7 @@ as many as you want and change that api key in (.env file after creating that fi
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/foodify.git
+git clone https://github.com/ArunavaCoderEm/foodify.git
 cd foodify
 ```
 
