@@ -15,7 +15,7 @@ export default function About() {
         One of my proudest accomplishments is the collection of projects showcased on my GitHub profile. Each project represents not just lines of code, but a journey of learning, creativity, and innovation. Through these projects, I've honed my skills, tackled challenges, and gained invaluable experience that continues to fuel my passion for coding.
         </p>
 
-        <a href='https://godard.vercel.app/' target="_blank" className='text-xl font-semibold mt-5 text-sky-500'>Visit My Portfolio Here</a>
+        <a href='https://meard.vercel.app/' target="_blank" className='text-xl font-semibold mt-5 text-sky-500'>Visit My Portfolio Here</a>
       </div>
     </>
   )
